@@ -1,0 +1,29 @@
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>imagen</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Cantidad</th>
+            <th>Compra</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor="let instrument of instruments" [ngClass]="{'clearance': instrument.clearance}">
+            <td><img width="90" class="img-thumbnail" [src]="instrument.image" [alt]="instrument.name" ></td>
+            <td>{{instrument.name}}</td>
+            <td>{{instrument.type}}</td>
+            <td>{{instrument.price | currency}}</td>
+            <td><span class="badge text-bg-warning" *ngIf="instrument.stock==0" > SIN STOCK </span></td>
+            <td >
+                <app-input-integer [(quantity)]="instrument.quantity" [max]="instrument.stock" *ngIf="instrument.stock"></app-input-integer>
+            </td>
+            <td>
+                <button class="btn" (click)="addToCart(instrument)">Comprar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

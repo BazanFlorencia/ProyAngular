@@ -1,0 +1,11 @@
+img {
+    width:15%;
+    height:5%;
+}
+.clearance {
+    background-color: lightgreen;
+    border: 3px solid green;
+}
+td {
+    vertical-align: middle;
+}

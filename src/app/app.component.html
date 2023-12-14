@@ -1,0 +1,20 @@
+<header>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <h2>Melomanos</h2>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" [routerLink]="['/catalogo']">Catálogo</a>
+          <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer>Melomanos - 2022</footer>

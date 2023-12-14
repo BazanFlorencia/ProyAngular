@@ -1,0 +1,11 @@
+button {
+    color: black;
+    background-color: lightgray;
+    border-style: none;
+}
+input {
+    max-width: 40px;
+}
+.largo{
+    width: 100px;
+}

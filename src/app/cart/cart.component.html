@@ -1,0 +1,11 @@
+<div class="carrito">
+    <h3>TU CARRITO</h3>
+    <ul>
+        <li *ngFor="let instrument of cartList">
+            {{instrument.name}}: {{instrument.price | currency}}, cantidad: {{instrument.quantity}}
+            <button class="btn btn-dark btn-sm" (click)="removeFromCart(instrument)"> X </button>
+        </li>
+        <li class="pagar" *ngIf="total()!=0"> Total a pagar: {{total() | currency}}</li>
+        <button class="btn btn-dark" *ngIf="total()!=0">Pagar</button>
+    </ul>
+</div>

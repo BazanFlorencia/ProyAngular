@@ -1,0 +1,16 @@
+h3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 140px;
+    padding-top: 6px;
+
+}
+.carrito{
+    border: 2px solid black;
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+}
+.pagar{
+    padding-bottom: 20px;
+}
